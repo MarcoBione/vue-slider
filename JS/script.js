@@ -58,7 +58,11 @@ createApp({
             }else{
                 this.currentIndex--;
             }
+        },
+        autoPlay(){
+            setInterval(this.goNext, 3000);
         }
+
 
     }
 }).mount('#app');
