@@ -23,14 +23,35 @@
     <div id="app" class="_mywrapper">
 
         <!-- carousel container -->
-        <div class="carousel">
+        <div class="carousel d-flex justify-content-center">
 
             <!-- slider -->
-            <div class="slider"></div>
+            <div class="slider p-2 d-flex flex-column justify-content-center">
+                <div class="title">
+                    <h3 class="display-6 fs-6 text-light">{{images[currentIndex].text}}</h3>
+                </div>
+
+                <div class="_myimgs">
+                    <img class ="_mycarouselimage" :src="'./images/' + images[currentIndex].image" :alt="images[currentIndex].text">
+                </div>
+
+            </div>
             <!-- /slider -->
 
             <!-- thumbs -->
-            <div class="thumbs"></div>
+            <div class="_mythumbs p-2">
+
+                <!-- go to previous image -->
+                <div class="_mygoarrows" @click="goPrev"><i class="fa-solid fa-circle-right fa-rotate-90"></i></div>
+
+                <li v-for="(image, index) in images" class="list-unstyled">
+                    <img class ="_mythumbsimages" :src="'./images/' + images[index].image" :alt="images[index].text">
+                  </li>
+
+                  <!-- go to next image -->
+                <div class="_mygoarrows" @click="goNext"><i class="fa-solid fa-circle-left fa-rotate-90"></i></div>
+
+            </div>
             <!-- /thumbs -->
 
         </div>

@@ -2,4 +2,34 @@
     width: 100%;
     height: 100vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+._myimgs{
+    text-align: start;
+}
+
+._mycarouselimage{
+    /* max-width: 100%; */
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid red;
+}
+
+._mythumbs{
+    max-width: 300px;
+    border: 1px solid red;
+}
+
+._mythumbsimages{
+    max-width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid red;
+}
+
+._mygoarrows{
+    color: aliceblue;
 }
