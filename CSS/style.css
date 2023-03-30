@@ -34,3 +34,8 @@
 ._mygoarrows{
     color: aliceblue;
 }
+
+.active{
+    border: 1px solid white;
+    opacity: 15%;
+}

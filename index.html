@@ -32,7 +32,8 @@
                 </div>
 
                 <div class="_myimgs">
-                    <img class ="_mycarouselimage" :src="'./images/' + images[currentIndex].image" :alt="images[currentIndex].text">
+                    <img class="_mycarouselimage" :src="'./images/' + images[currentIndex].image"
+                        :alt="images[currentIndex].text">
                 </div>
 
             </div>
@@ -45,10 +46,10 @@
                 <div class="_mygoarrows" @click="goNext"><i class="fa-solid fa-circle-right fa-rotate-90"></i></div>
 
                 <li v-for="(image, index) in images" class="list-unstyled">
-                    <img class ="_mythumbsimages" :src="'./images/' + images[index].image" :alt="images[index].text">
-                  </li>
+                    <img class="_mythumbsimages" :src="'./images/' + images[index].image" :alt="images[index].text">
+                </li>
 
-                  <!-- go to next image -->
+                <!-- go to next image -->
                 <div class="_mygoarrows" @click="goPrev"><i class="fa-solid fa-circle-left fa-rotate-90"></i></div>
 
             </div>
